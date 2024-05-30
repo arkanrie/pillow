@@ -1,0 +1,782 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root{
+    --bg-color: #808080;
+    --second-bg-color: #131313;
+    --text-color:  white;
+    --main-color: #A0DEFF;
+
+
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    background-color:#A0DEFF;
+   
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #E0EAFC, #CFDEF3); 
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    background: #A0DEFF;
+
+     
+}
+
+.section-p1 {
+    padding: 40x 80px;
+   
+
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 12%; /* Adjusted top and bottom padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: none;
+}
+
+.logo {
+    font-size: 2rem;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+   
+       
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 15px 15px;
+    align-items: center;
+    border-radius: 25px; 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 25px; 
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff
+}
+
+.navbar a {
+    font-size: 18px;
+    color:  rgb(72, 144, 183);
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 35px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 50px solid transparent;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(rgb(29, 61, 57), green, blue);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-bottom: 0;
+    padding-bottom: 5px;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+
+}
+
+.spacer {
+    height: 180px; /* Adjust height as needed */
+    border-radius: none; /* Rounded corners */
+    box-shadow: 0 4px 6px var #CFDEF3; /* Soft shadow */
+    margin-bottom: 20px; /* Spacing between sections */
+    backdrop-filter: blur(10px); /* Soft blur effect */
+    overflow: hidden; /* Hide overflow if needed */
+    transition: height 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+#products {
+    text-align: center;
+}
+
+.section-p1 {
+    margin-bottom: 30px;
+}
+
+#products {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); /* More transparent for a lighter feel */
+    padding: 50px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+    margin: 20px;
+   
+
+}
+
+.banner h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #9e9e9e;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.banner p {
+   font-family: Arial, sans-serif; /* Elegant font */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #666; /* Light text color */
+    margin-bottom: 30px; /* Add spacing */
+}
+
+#products a {
+    display: inline-block;
+    margin-top: 20px;
+    color: hwb(0 74% 26%);
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+#products a i {
+    font-size: 24px;
+}
+
+#products a:hover {
+    color: #aad1e6;
+}
+
+
+.container{
+    width: 70vw;
+    margin: auto;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container h1{
+    color: #9e9e9e;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 2fr 50px;
+    margin-top: 10px;
+}
+
+header .shopping{
+    position: relative;
+    text-align: right;
+}
+
+header .shopping {
+    position: relative;
+    text-align: right;
+    margin-left: 20px; /* Adjust this value to move it further right */
+}
+
+header .shopping i {
+    font-size: 3rem;
+    color: #efefef;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+}
+
+header .shopping i:hover {
+    color:  rgb(72, 144, 183);
+}
+
+
+header .shopping span{
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    background: red;
+    padding: 3px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ---------------- */
+
+.card{
+    position: fixed;
+    top: 0;
+    left: 100%; 
+    width: 500px;
+    height: 100vh;
+    background-color: #dadada;
+    border-left: 1px solid var(--main-color);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.active .card{
+    left: calc(100% - 500px);
+}
+
+.active .container{
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+}
+
+.card h1 {
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color); /* Optional: Add background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+.card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card .checkOut div{
+    background-color: var(--main-color);
+    color: #efefef;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: white;
+    color: var(--main-color);
+}
+
+
+
+
+.container .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);;
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+
+.list .item{
+    margin-right: 15px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+    letter-spacing: 1px;
+    transition: all 0.25s ease ;
+    -webkit-transition: all 0.25s ease ;
+    -moz-transition: all 0.25s ease ;
+    -ms-transition: all 0.25s ease ;
+    -o-transition: all 0.25s ease ;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+.list .item:hover{
+    background-color: var(--main-color);
+}
+
+.list .item img {
+    width: 100%; /* Ensure the image fills its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: 60%; /* Maintain the image's aspect ratio */
+    border-radius: 15px; /* Add a subtle border-radius for a softer look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+    transition: transform 0.3s ease; /* Add a smooth transition on hover */
+}
+
+.list .item img:hover {
+    transform: scale(1.05); /* Scale up the image slightly on hover for a soft interaction */
+}
+
+.list .item .title {
+    font-weight: 600;
+    color: var(--main-color);
+    transition: color 0.3s ease; 
+}
+
+.list .item .price {
+    margin: 10px;
+    color: var(--main-color);
+    transition: color 0.3s ease; 
+}
+
+.list .item:hover .title {
+    color: whitesmoke; 
+}
+
+.list .item:hover .price {
+    color: white; 
+}
+
+
+.list .item button{
+    background-color: var(--main-color);
+    color: #efefef;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #efefef;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+}
+
+.list .item button:hover{
+    background-color: whitesmoke;
+    color: var(--main-color);
+}
+
+.star {
+    color: #f9d71c;
+   
+}
+
+.star i {
+    font-size: 12px;
+}
+
+
+/* ---------------------- */
+
+.listCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjust spacing between items */
+    color: #1c1f25;
+    padding: 10px;
+    overflow-y: auto; /* Make the list scrollable */
+    max-height: calc(87% - 55px); /* Ensure the list fits within the card */
+}
+
+.listCard li {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Add a background color for better visibility */
+    padding: 10px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.listCard li img {
+    width: 50%;
+    height: auto; /* Ensure image maintains aspect ratio */
+    margin-right: 10px; /* Add spacing between image and text */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+
+.listCard .count {
+    margin: 0 10px;
+    color: #1c1f25;
+    font-size: 1.2rem;
+}
+
+
+.cardTitle, .cardPrice {
+    color: #1c1f25;
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: 600; /* Increase font weight for emphasis */
+    margin-bottom: 5px; /* Add spacing between the elements */
+    text-align: center; /* Center-align the text */
+    text-transform: capitalize; /* Convert text to sentence case */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+} 
+
+
+
+
+.cardButton {
+    background-color: #CFDEF3;
+    color: var(--main-color); /* Use a color from your variables or define a specific color */
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cardButton:hover {
+    background-color: var(--main-color); /* Change to main color on hover */
+    color: #efefef; /* Change text color on hover */
+}
+
+.header .closeShopping {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .closeShopping i {
+    font-size: 16px;
+    color: #000;
+}
+
+.header .closeShopping:hover i {
+    color: var(--main-color);  
+    transform: scale(1.2);  
+    transition: color 0.3s, transform 0.3s;  
+}
+
+.header .closeShopping:hover {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+}
+
+
+.checkout-btn {
+    color: var(--main-color);
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    font-weight: 800;
+    background: white;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5;
+}
+
+.checkout-btn:hover {
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color); /* Optional: change border color on hover */
+}
+
+.active .checkout-form-container{
+    transform: translate(100%, -50%); /* Slide form into view */
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+ 
+}
+.checkout-form-container {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 20%; /* Center vertically */
+    left: 13%; /* Start from the left edge */
+    background-color: rgba(255, 255, 255, 0.9); /* Add some opacity for the background */
+    backdrop-filter: blur(5px); /* Apply backdrop filter to blur the background */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 1500px;
+    max-height: 90vh; /* Ensure the form fits within the viewport */
+    overflow-y: relative; /* Add scroll if content overflows */
+    transition: transform 0.3s ease; /* Smooth transition for sliding in */
+    z-index: 1;
+    overflow: auto;
+ 
+    
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-75 {
+    flex: 75%;
+}
+
+.col-50 {
+    flex: 50%;
+    padding: 0 16px;
+}
+
+.container {
+    padding: 15px;
+}
+
+input[type="text"], input[type="submit"], .btn {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], .btn {
+    color: var(--main-color);
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+input[type="submit"]:hover, .btn:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+}
+
+.icon-container i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close i {
+    font-size: 16px;
+    color: #000;
+}
+
+.close:hover i {
+    color: var(--main-color); /* Change color to skyblue on hover */
+    transform: scale(1.2);  
+    transition: color 0.3s, transform 0.3s;  
+}
+
+.close:hover {
+    background-color: #f0f0f0; /* Lighter background color on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: scale(1.1);
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+   
+}
+
+.footer .social  {
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(var(--main-color));
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+
+
+
+}
+
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+
+}
+
+.footer .list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.footer .list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer .list li:last-child {
+    margin-right: 0;
+}
+
+.footer .list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer .list li a:hover {
+    color: #007bff;
+}
+
+
+@media (max-width:991px){
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .Timeline-items::before::before{
+        left: 7px;
+    }
+    .Timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .Timeline-item:nth-child(odd),
+    .Timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+    .contact form{
+        flex-direction: column;
+
+    }
+    .footer{
+        padding:  2rem 3%;
+
+    }      
+}
+
+
